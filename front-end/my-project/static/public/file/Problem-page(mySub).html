@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Your Codes</title>
+ <link rel="stylesheet" type="text/css" href="problem-page(mySub).css">
+ <link rel="icon" type="image/x-icon" href="Images/IMG_5625.PNG">
+ <script defer type="text/javascript" src="index.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+ <link rel="stylesheet" type="text/css" href="fontfile/stylesheet.css">
+</head>
+<body>
+ <header>
+    <h1 class="title_name">YourCode</h1>
+    <img class="logo" src="Images/icon.png" width="50px" height="50px">
+    <p>Welcome, Username</p>
+    <img class="user" src="Images/user.png" onclick="Click('../Front end/Login.html')" width="30px" height="30px">
+    <hr>
+  <nav>
+
+   <div class="navbar">
+        <ul class="container gray highlightTextIn">
+            <!-- navagation bar -->
+            <li><a alt ="Homepage" href="homepage.html">Homepage</a></li>
+            <li><a alt = "Problems" href="Problems-list.html">Problems</a></li>
+            <li><a alt="Create" href="">Create</a></li>
+            <li><a alt="Leader Board" href="Leader-board.html">Leader Board</a></li>
+        </ul>
+
+   </div>
+  </nav>
+  <nav>
+    <!-- second nav bar -->
+    <div id="second-nav">
+     <a href="Problem-page(description).html">Description</a>
+     <a href="Problem-page(solution).html">Solutions</a>
+     <a href="./Problem-page(mySub).html">My Submissions</a>
+     <a href="Problem-page(comments).html">Comments</a>
+     <!-- languge dropdown box -->
+     <select name="language" id="language">
+            <option value="Python" Selected>Python</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="PHP">PHP</option>
+            <option value="javaScript">javaScript</option>
+        </select>
+    </div>
+   </nav>
+ </header>
+ <main>
+   <section>
+    <!-- split screen -->
+    <div class="split-screen">
+      <!-- left screen -->
+      <div class="left-screen">
+       <!-- title -->
+       <div class="title">
+        <h1>My Attempts</h1>
+       </div>
+
+       <!-- over all table -->
+       <table class="result" bgcolor="#f1f1f1">
+          <thead>
+           <tr bgcolor="#dadada">
+            <th>Time Submitted</th>
+            <th>Status</th>
+            <th>Run time</th>
+            <th>Langauge</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr bgcolor="white">
+             <td>18/01/2022 10:31am</td>
+             <td><a href="#fist-attempt" class="green">Accepted</a></td>
+             <td>120ms</td>
+             <td>Python</td>
+            </tr>
+            <tr>
+             <td>18/01/2022 10:31am</td>
+             <td><a href="#second-attempt" class="red">Failed</a></td>
+             <td>200ms</td>
+             <td>Python</td>
+            </tr>
+          </tbody>
+        </table>
+
+       <!-- first attempt -->
+       <h2>Attempt 1 </h2>
+       <div class="top-bar">
+        <div class="date-time">
+         18/01/2022 10:31am
+        </div>
+       </div>
+       <!-- solutions -->
+       <div class="solution-area">
+        <!-- solution code -->
+        <textarea name="" id="solution-area" cols="30" rows="10"></textarea>
+       </div>
+       <!-- Result table -->
+       <div class="result-table">
+        <table id="first-attempt" class="result" bgcolor="#f1f1f1">
+          <thead>
+           <tr bgcolor="dadada">
+            <th>Time Submitted</th>
+            <th>Status</th>
+            <th>Run time</th>
+            <th>Langauge</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr bgcolor="white">
+             <td>18/01/2022 10:31am</td>
+             <td class="green">Accepted</td>
+             <td>120ms</td>
+             <td>Python</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+
+       <!-- title -->
+       <h2>Attempt 2 </h2>
+       <div class="top-bar">
+        <div class="date-time">
+         18/01/2022 10:31am
+        </div>
+       </div>
+       <!-- solution -->
+       <div class="solution-area">
+        <!-- solution code -->
+        <textarea name="" id="solution-area" cols="30" rows="10"></textarea>
+       </div>
+       <!-- Result table -->
+       <div class="result-table">
+        <table id="second-attempt" class="result" bgcolor="#f1f1f1">
+          <thead>
+           <tr bgcolor="dadada">
+            <th>Time Submitted</th>
+            <th>Status</th>
+            <th>Run time</th>
+            <th>Langauge</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr bgcolor="white">
+             <td>18/01/2022 10:31am</td>
+             <td class="red">Failed</td>
+             <td>200ms</td>
+             <td>Python</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+
+
+
+
+
+      </div>
+      <!-- right screen -->
+      <div class="right-screen">
+        <!-- coding box area -->
+        <textarea name="Code-area" id="code-area" ></textarea>
+        <!-- result console with table -->
+        <div class="result-box">
+          <table bgcolor="black">
+            <thead>
+              <tr bgcolor="lightgrey">
+                <th>Input</th>
+                <th>Expected</th>
+                <th>Output</th>
+                <th>Correct</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr bgcolor="white">
+                <td>root = [1,null,3,2,4,null,5,6]</td>
+                <td>[[1],[3,2,4],[5,6]]</td>
+                <td>[[1],[3,2,4],[5,6]]</td>
+                <td class="green"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr bgcolor="white">
+                <td>root = [1,null,3,2,4,null,5,6]</td>
+                <td>[[1],[3,2,4],[5,6]]</td>
+                <td>[[1],[3,2,4],[5,5]]</td>
+                <td class="red"><i class="fa-solid fa-xmark"></i></td>
+              </tr>
+              <tr bgcolor="white">
+                <td>root = [1,null,3,2,4,null,5,6]</td>
+                <td>[[1],[3,2,4],[5,6]]</td>
+                <td>[[1],[3,2,4],[5,7]]</td>
+                <td class="red"><i class="fa-solid fa-xmark"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- check and submit buttons -->
+        <div class="buttons">
+          <button>Check</button>
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+   </section>
+ </main>
+</body>

@@ -1,0 +1,446 @@
+/* logo of website */
+#logo {
+ width: 80px;
+ height: 80px;
+ display: inline-block;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+body {
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin: 0;
+ padding: 0;
+}
+
+/* prifile icon and user's Username */
+#profile {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0px 10px;
+}
+
+/* profile icon */
+div#profile img {
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+}
+
+div#profile a:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+ border-radius: 7px;
+}
+
+/* title 'Your Codes' */
+#title {
+ color: rgb(78, 78, 227);
+ font-size: 55px;
+ font-weight: bold;
+ display:inline-block;
+}
+
+/* Homepage, Problems, Create, Leader Board  */
+.left {
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.left:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* login/sign up buttons */
+.right {
+ border: 1px solid black;
+ border-radius: 40px;
+ padding: 1px 7px;
+ margin-right: 5px;
+}
+
+.right:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* all buttons on nav bar */
+.left, .right {
+ color: rgb(78, 80, 210);
+ font-size:  25px;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+/* div for nav bar, the whole nav bar */
+.navBar {
+ background-color: rgb(121, 242, 242);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#second-nav {
+    background-color: #f4f4f4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* each links on second nav bar */
+#second-nav a {
+    color:black;
+    margin-right: 15px;
+    background-color:#e0dddd;
+    padding: 2px 7px 2px 7px;
+}
+
+#second-nav a:hover {
+    background-color:#bfbfbf;
+    transition: all 0.4ms;
+}
+
+
+
+/* split screen area */
+.split-screen {
+    display: flex;
+    height: 100vh;
+}
+
+/* left side of screen */
+.left-screen {
+    position: relative;
+    resize:horizontal;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: white;
+    min-width: 0px;
+}
+
+/* right side of screen */
+.right-screen{
+    position: relative;
+    flex: 1;
+    background-color: white;
+    resize: horizontal;
+    min-width: 300px;
+    overflow-y: scroll;
+}
+
+/* width of the scroll bar */
+.left-screen::-webkit-scrollbar {
+    width: 1vw;
+}
+
+/* color of smaller bar */
+.left-screen::-webkit-scrollbar-thumb {
+    background-color:#959494;
+}
+
+/* color of smaller bar after hover */
+.left-screen::-webkit-scrollbar-thumb:hover {
+    background-color: #bdbdbd;
+}
+
+/* color of bar */
+.left-screen::-webkit-scrollbar-track {
+    background-color:#f4f4f4;
+}
+
+/* resizer of the split screen */
+.left-screen::-webkit-resizer {
+    background-color: #dddddd;
+}
+
+.test-case {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.test-case table {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    width: max-content;
+}
+
+th {
+    padding: 3px;
+}
+
+td {
+    padding: 15px 15px 15px 5px;
+}
+
+/* change language drop down box */
+#language{
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color:#f1ecec;
+    color: black;
+    margin-top: 4px;
+}
+
+/* text area for code */
+#code-area {
+    width: 44.8vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* result table */
+.result-box table{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: max-content;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(228, 67, 67);
+    text-align: center;
+}
+
+/* red tick */
+.red {
+    color: red;
+    font-size: 20px;
+}
+
+/* green tick */
+.green {
+    color: #7adcb8;
+    font-size: 20px;
+}
+
+.buttons {
+    float: right;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+/* check and submit button */
+.buttons button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    background-color:#58df7c;
+    color: black;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #86eaa0;
+}
+
+.logo{
+    position: absolute;
+    margin-top: -63px;
+    margin-left: 20px;
+}
+
+/*user icon*/
+.user{
+    position: relative;
+    margin-top: -50px;
+    margin-right: 20px;
+    float:right;
+}
+
+header p{
+    position:relative;
+    float:right;
+    display: block;
+    margin-top: -40px;
+    margin-right: 60px;
+    font-family: Inter,sans-serif;
+}
+
+.container li a
+{
+    size: 100px;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Highlight text out  */
+.highlightTextIn li a:before
+{
+    position: absolute;
+    color: #000000;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+.highlightTextIn li a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+.highlightTextIn li a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+.highlightTextIn li a:before
+{
+    transform: scale(1.2);
+} 
+
+/* Homepage, Problems, Create, Leader Board  */
+ul {
+    padding-top: 18px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+ul li {
+    display: inline-block;
+    margin-right:30px;
+  }
+ul li a {
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 100px;
+  color: #929292;
+  position: relative;
+  text-decoration: none;
+}
+
+ul li a::after{
+    position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: #929292;
+	left: 50%;
+	bottom: -1px;
+	transition: all 0.4s ease-in-out;
+}
+
+.navBar:hover ul li a::after {
+	width: 100%;
+	left: 0;
+}
+
+/* all buttons on nav bar */
+.navbar ul li a{
+    color: #929292;
+    font-size:  15px;
+    letter-spacing: 2px;
+    margin: -8px;
+}
+
+/* ratings */
+.stars {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* top bar of solution */
+.top-bar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #95c8fe;
+ margin-left: 40px;
+ margin-right: 40px;
+ margin-top: 10px;
+ max-width: 60vw;
+ min-width: 40vw;
+}
+
+textarea {
+    max-width: 60vw;
+    min-width: fit-content;
+    resize: both;
+    overflow-y: visible;
+}
+
+/* date and time solution submitted */
+.date-time {
+ margin: 0px 7px;
+ padding: 4px;
+}
+
+/* solution 1 text */
+.left-screen h2 {
+ margin-left: 40px;
+  margin-top: 20px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Solution title */
+.title {
+ margin: 10px 0px 10px 10px;
+ border-bottom: 2px solid grey;
+ padding-bottom: 10px;
+ font-size: 20px;
+ margin-right: 20px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.solution-area {
+ margin-left: 40px;
+}
+
+/* text area of solution */
+.solution-area textarea {
+ width: 40vw;
+ height: 50vh;
+ overflow-x: hidden;
+ resize: none;
+}
+
+/* for all tables on the left-screen */
+.result {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.12);
+    min-width: 400px;
+    max-width: 800px;
+    border-collapse: separate;
+    text-align: center;
+}
+
+th {
+    padding: 7px;
+}
+
+td {
+    padding: 15px 15px 15px 10px;
+}
+
+/* makes every second row in table change color */
+.result tbody tr:nth-of-type(even) {
+    background-color: #f7f7f7;
+}

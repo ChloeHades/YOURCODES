@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.myspringboot.modulers.prloblemcode.dao.ProblemcodeDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.example.myspringboot.modulers.prloblemcode.entity.ProblemcodeEntity" id="problemcodeMap">
+        <result property="id" column="id"/>
+        <result property="problem" column="problem"/>
+        <result property="code" column="code"/>
+        <result property="username" column="username"/>
+        <result property="time" column="time"/>
+    </resultMap>
+    <resultMap type="com.example.myspringboot.modulers.problams.entity.Sorts" id="sorts">
+        <result property="profile" column="profile"/>
+        <result property="title" column="title"/>
+        <result property="ratings" column="ratings"/>
+    </resultMap>
+    <select id="getproblemsort" resultMap="sorts">
+        SELECT c.username AS PROFILE , COUNT(c.username) AS ratings FROM  tb_problemcode AS c  GROUP BY c.username ORDER BY ratings DESC LIMIT 3
+    </select>
+</mapper>

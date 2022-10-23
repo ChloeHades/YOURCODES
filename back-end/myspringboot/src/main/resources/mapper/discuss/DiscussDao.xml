@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.myspringboot.modulers.discuss.dao.DiscussDao">
+
+
+    <resultMap type="com.example.myspringboot.modulers.discuss.entity.DiscussEntity" id="discussMap">
+        <result property="id" column="id"/>
+        <result property="problemid" column="problemid"/>
+        <result property="discussdetaile" column="discussdetaile"/>
+        <result property="time" column="time"/>
+        <result property="discussdeuser" column="discussdeuser"/>
+    </resultMap>
+
+
+</mapper>

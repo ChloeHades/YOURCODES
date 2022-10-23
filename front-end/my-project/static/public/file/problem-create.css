@@ -1,0 +1,194 @@
+/* text content of "create your question"*/
+#createtext {
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: left;
+    margin-left: 300px;
+    margin-top: 25px;
+}
+
+/* titles of each modules */
+#ttopic,
+#ttitle,
+#tdifficulty,
+#ttag,
+#tdescription,
+#ttestcase,
+#trun {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 300px;
+    margin-top: 25px;
+}
+
+/* title input box */
+#title1{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    align-items: center;
+    width: 181px;
+    height: 28px;
+}
+
+/* topic select box */
+#topic{
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    align-items: center;
+    width: fit-content;
+    font-size: 18px;
+    height: 28px;
+}
+
+/* difficulty select module */
+#difficulty{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    align-items: center;
+}
+
+
+/* tags select module */
+
+#tags {
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    margin: 12px;
+
+}
+
+/* input box for tags */
+.input-selector {
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+    width: 181px;
+    height: 28px;
+}
+
+/* fields of input tag */
+.select-field {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+
+}
+
+.select-field, .task {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+/* black triangular arrow down on tags */
+.arrow {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s linear;
+}
+
+.tags {
+    width: max-content;
+    margin-left: 300px;
+}
+
+/* for each of the tasks */
+.task {
+    display: block;
+}
+
+.task:hover {
+    background-color: #d8eaf4;
+}
+
+/* dont show the drop down tags */
+.list {
+    box-shadow: 0 10px 60px rgba(0,0,0,0.2);
+    display: none;
+}
+
+/* show dropdown tags */
+.show {
+    display: block;
+}
+
+/* rotate arrow around */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+
+
+/* description input box */
+#description{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    width: 668px;
+    height: 200px;
+}
+
+/* test case input box */
+#testcase{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+}
+
+/*
+.addcasebutton{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*/
+
+#runcode{
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    width: 668px;
+    height: 200px;
+}
+
+#runbutton{
+    display: flex;
+    justify-content: left;
+    margin-left: 923px;
+}
+
+
+#saveb {
+    font-size: 22px;
+    margin-left: 580px;
+}
+
+#submitb {
+    font-size: 22px;
+    margin-left: 540px;
+}
+
+/*
+#topics,
+#difficulty,
+#tags,
+#testcase,
+#runcode,
+#save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+}*/

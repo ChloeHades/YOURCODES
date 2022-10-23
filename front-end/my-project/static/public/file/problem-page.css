@@ -1,0 +1,110 @@
+/* logo of website */
+#logo {
+ width: 80px;
+ height: 80px;
+ display: inline-block;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+body {
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin: 0;
+ padding: 0;
+}
+
+/* prifile icon and user's Username */
+#profile {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0px 10px;
+}
+
+/* profile icon */
+div#profile img {
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+}
+
+div#profile a:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+ border-radius: 7px;
+}
+
+/* title 'Your Codes' */
+#title {
+ color: rgb(78, 78, 227);
+ font-size: 55px;
+ font-weight: bold;
+ display:inline-block;
+}
+
+/* Homepage, Problems, Create, Leader Board  */
+.left {
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.left:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* login/sign up buttons */
+.right {
+ border: 1px solid black;
+ border-radius: 40px;
+ padding: 1px 7px;
+ margin-right: 5px;
+}
+
+.right:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* all buttons on nav bar */
+.left, .right {
+ color: rgb(78, 80, 210);
+ font-size:  25px;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+/* div for nav bar, the whole nav bar */
+.navBar {
+ background-color: rgb(121, 242, 242);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* div for second nav bar */
+#second-nav {
+    background-color: #7adcb8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* each links on second nav bar */
+#second-nav a {
+    color:#f3f3f3;
+    margin-right: 15px;
+    background-color:#158971;
+    padding: 2px 7px 2px 7px;
+}
+
+#second-nav a:hover {
+    background-color:#30a379;
+    transition: all 0.4ms;
+}

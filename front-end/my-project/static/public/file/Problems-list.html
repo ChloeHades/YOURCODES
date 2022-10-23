@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Your Codes</title>
+ <link rel="stylesheet" type="text/css" href="index.css">
+ <link rel="stylesheet" type="text/css" href="fontfile/stylesheet.css">
+ <link rel="icon" type="image/x-icon" href="Images/IMG_5625.PNG">
+ <link rel="stylesheet" type="text/css" href="problem-list.css">
+ <script defer type="text/javascript" src="index.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="title_name">YourCode</h1>
+        <img class="logo" src="Images/icon.png" width="50px" height="50px">
+        <img class="user" src="Images/user.png" onclick="Click('../Front end/Login.html')" width="30px" height="30px">
+        <hr>
+      <nav>
+       <div class="navbar">
+            <ul class="container gray highlightTextIn">
+                <!-- navagation bar -->
+              <li><a alt ="Homepage" href="http://localhost:8001/">Homepage</a></li>
+              <li><a alt = "Problems" href="http://localhost:63342/my-project/public/file/Problems-list.html">Problems</a></li>
+              <li><a alt="Create" href="http://localhost:63342/my-project/public/file/Problem_Create.html">Create</a></li>
+              <li><a alt="Leader Board" href="http://localhost:63342/my-project/public/file/Leader-board.html">Leader Board</a></li>
+            </ul>
+       </div>
+      </nav>
+     </header>
+
+
+ <main>
+  <section>
+    <!-- Topics buttons to select different topics-->
+   <div id="topics">
+    <button>All Topics</button>
+    <button>Algorithms</button>
+    <button>Databases</button>
+    <button>Mathematics</button>
+    <button>Basic Programming</button>
+   </div>
+   <!-- select different difficulties -->
+   <div id="difficulties">
+    <select name="" id="difficulty">
+     <option id ="green" value="Easy">Easy</option>
+     <option id ="yellow" value="Medium">Medium</option>
+     <option id ="red" value="Hard">Hard</option>
+    </select>
+    <!-- select different tags -->
+    <div class="tags">
+      <div class="select-field">
+        <input type="search" name="" id="" placeholder="Search Tags" class="input-selector">
+        <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+      </div>
+      <!-- list of tags that can be selected -->
+      <div class="list">
+        <label for="task1" class="task">
+          <input type="checkbox" name="select" id="task1" value="Array">Array
+        </label>
+        <label for="task2" class="task">
+          <input type="checkbox" name="select" id="task2" value="String">String
+        </label>
+        <label for="task3" class="task">
+          <input type="checkbox" name="select" id="task3" value="Math">Math
+        </label>
+        <label for="task4" class="task">
+          <input type="checkbox" name="select" id="task4" value="Sorting">Sorting
+        </label>
+        <label for="task5" class="task">
+          <input type="checkbox" name="select" id="task5" value="Tree">Tree
+        </label>
+        <label for="task6" class="task">
+          <input type="checkbox" name="select" id="task6" value="Binary Search">Binary Search
+        </label>
+        <label for="task7" class="task">
+          <input type="checkbox" name="select" id="task7" value="Matrix">Matrix
+        </label>
+        <label for="task8" class="task">
+          <input type="checkbox" name="select" id="task8" value="Binary Tree">Binary Tree
+        </label>
+        <label for="task9" class="task">
+          <input type="checkbox" name="select" id="task9" value="Bit Manipulation">Bit Manipulation
+        </label>
+        <label for="task10" class="task">
+          <input type="checkbox" name="select" id="task10" value="Stack">Stack
+        </label>
+        <label for="task11" class="task">
+          <input type="checkbox" name="select" id="task11" value="Counting">Counting
+        </label>
+        <label for="task12" class="task">
+          <input type="checkbox" name="select" id="task12" value="Linked List">Linked List
+        </label>
+        <label for="task13" class="task">
+          <input type="checkbox" name="select" id="task13" value="Recursion">Recursion
+        </label>
+        <label for="task14" class="task">
+          <input type="checkbox" name="select" id="task14" value="Queue">Queue
+        </label>
+        <label for="task15" class="task">
+          <input type="checkbox" name="select" id="task15" value="Merge Sort">Merge Sort
+        </label>
+        <label for="task16" class="task">
+          <input type="checkbox" name="select" id="task16" value="Bubble Sort">Bubble Sort
+        </label>
+        <label for="task17" class="task">
+          <input type="checkbox" name="select" id="task17" value="Selection Sort">Selection Sort
+        </label>
+      </div>
+   </div>
+  </section>
+  <!-- tables for all problems-->
+  <section>
+   <div id="tables">
+    <table class="content-table">
+      <!-- headers of table -->
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Solution</th>
+          <th>Difficulty</th>
+          <th>Submissions</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Two Sum</td>
+          <td><a href="#">.file</a></td>
+          <td>Easy</td>
+          <td>301</td>
+          <td><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Invert strings</td>
+          <td><a href="#">.file</a></td>
+          <td>Easy</td>
+          <td>222</td>
+          <td><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Change letters</td>
+          <td><a href="#">.file</a></td>
+          <td>Medium</td>
+          <td>151</td>
+          <td><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+  </section>
+ </main>
+</body>

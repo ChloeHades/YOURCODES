@@ -1,0 +1,259 @@
+#logo {
+ width: 80px;
+ height: 80px;
+ display: inline-block;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+body {
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin: 0;
+ padding: 0;
+}
+
+/* div for profile icon and user's Username */
+#profile {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0px 10px;
+}
+
+/* profile icon */
+div#profile img {
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+}
+
+div#profile a:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+ border-radius: 7px;
+}
+
+/* title 'Your Codes' */
+#title {
+ color: rgb(78, 78, 227);
+ font-size: 55px;
+ font-weight: bold;
+ display:inline-block;
+}
+
+/* Homepage, Problems, Create, Leader Board  */
+.left {
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.left:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* login/sign up buttons */
+.right {
+ border: 1px solid black;
+ border-radius: 40px;
+ padding: 1px 7px;
+ margin-right: 5px;
+}
+
+.right:hover {
+ background-color: lightblue;
+ transition: all 0.5s;
+}
+
+/* all buttons on nav bar */
+.left, .right {
+ color: rgb(78, 80, 210);
+ font-size:  25px;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+/* div for nav bar, the whole nav bar */
+.navBar {
+ background-color: rgb(121, 242, 242);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* buttons on problem-list page  */
+#topics, #difficulties, #tags, #tables {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* topics buttons */
+#topics button{
+    border: 1px solid transparent;
+    padding: 16px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f1f3f9;
+    border-radius: 60px;
+    margin: 12px;
+}
+
+#topics button:hover {
+    background-color: #d9dadc;
+}
+
+/* difficulty and tags dropdown box */
+#difficulty, #tag {
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #dddddd;
+    border-radius: 20px;
+    margin: 12px;
+}
+
+#green {
+    color: rgb(45, 190, 45);
+    background-color: #f3f3f3;
+}
+
+#yellow {
+    color: rgb(240, 199, 17);
+    background-color: #f3f3f3;
+}
+
+#red {
+    color: crimson;
+    background-color: #f3f3f3;
+}
+
+/* table for problems */
+.content-table {
+    border-collapse: collapse;
+    min-width: 400px;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* table headers */
+.content-table thead tr {
+    background-color: #dddddd;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+}
+
+/* all cells in table */
+.content-table th, .content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* makes every second row in table change color */
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* creates straight line at the last row */
+.content-table tbody tr:last-of-type {
+    border-bottom: 3px solid #dddddd;
+}
+
+/* input box for tags */
+.input-selector {
+    outline: none;
+    border: none;
+    background-color: #f1f3f9;
+}
+
+/* fields of input tag */
+.select-field {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    max-width: 320px;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+.select-field, .task {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+/* black triangular arrow down on tags */
+.arrow {
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s linear;
+    background-color: #6e93f7;
+    padding: 2px 5px 2px 5px;
+    border-radius: 8px;
+}
+
+.tags {
+    width: max-content;
+}
+/* for each of the tasks */
+.task {
+    display: block;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width:auto;
+    display: inline-table;
+    padding: 5px;
+    margin: 5px;
+}
+
+.task:hover {
+    background-color: #dddddd;
+}
+
+/* dont show the drop down tags */
+.list {
+    box-shadow: 0 10px 60px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 3px 3px 10px 10px;
+    max-width: 300px;
+}
+
+/* show dropdown tags */
+.show {
+    display: block;
+}
+
+/* rotate arrow around */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+/* rating stars */
+.fa-solid {
+    font-size: 15px;
+}
+

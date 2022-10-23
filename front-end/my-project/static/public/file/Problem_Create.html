@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Your Codes</title>
+ <link rel="stylesheet" type="text/css" href="index.css">
+ <link rel="stylesheet" type="text/css" href="fontfile/stylesheet.css">
+ <link rel="icon" type="image/x-icon" href="Images/IMG_5625.PNG">
+ <link rel="stylesheet" type="text/css" href="problem-create.css">
+ <script defer type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="title_name">YourCode</h1>
+        <hr>
+      <nav>
+       <div class="navbar">
+            <ul class="container gray highlightTextIn">
+                <!-- navagation bar -->
+                <!--<li><a href="./Login.html"><img id="logo" src="./Images/IMG_5625.PNG" alt="Logo"></a></li>-->
+              <li><a alt ="Homepage" href="http://localhost:8001/">Homepage</a></li>
+              <li><a alt = "Problems" href="http://localhost:63342/my-project/public/file/Problems-list.html">Problems</a></li>
+              <li><a alt="Create" href="http://localhost:63342/my-project/public/file/Problem_Create.html">Create</a></li>
+              <li><a alt="Leader Board" href="http://localhost:63342/my-project/public/file/Leader-board.html">Leader Board</a></li>
+            </ul>
+       </div>
+      </nav>
+     </header>
+
+
+
+<h1 id="createtext">Create Your Question</h1>
+
+<br>
+
+
+<!--choose title -->
+
+  <label for="title"><h2 id="ttitle">Title</h2></label>
+  <input type="text" id="title" name="title">
+
+
+<!--choose topic -->
+
+  <h2 id="ttopic">Topic</h2>
+  <div id="topic">
+    <select name="" id="topic" >
+     <option value=""disabled selected> </option>
+     <option value="Algorithms">Algorithms</option>
+     <option value="Databases">Databases</option>
+     <option value="Mathematics">Mathematics</option>
+     <option value="Basic Programming">Basic Programming</option>
+    </select> <br><br>
+  </div>
+
+<!--choose difficulty -->
+
+  <h2 id="tdifficulty">Difficulty</h2>
+<div id="difficulty">
+  <input type="radio" id="easy" name="difficulty" value="Easy">
+  <label for="easy">Easy</label> &nbsp &nbsp &nbsp
+
+  <input type="radio" id="medium" name="difficulty" value="Medium">
+  <label for="medium">Medium</label>&nbsp &nbsp &nbsp
+
+  <input type="radio" id="hard" name="difficulty" value="Hard">
+  <label for="hard">Hard</label>&nbsp &nbsp &nbsp<br><br>
+</div>
+
+<!--add tags -->
+
+  <h2 id="ttag" >Add Tags</h2>
+
+  <div class="tags">
+    <div class="select-field">
+      <input type="text" name="" id="" class="input-selector">
+      <span class="arrow">&blacktriangledown;</span>
+    </div>
+    <!-- list of tags that can be selected -->
+    <div class="list">
+      <label for="task1" class="task">
+        <input type="checkbox" name="select" id="task1" value="Array">Array
+      </label>
+      <label for="task2" class="task">
+        <input type="checkbox" name="select" id="task2" value="String">String
+      </label>
+      <label for="task3" class="task">
+        <input type="checkbox" name="select" id="task3" value="Math">Math
+      </label>
+      <label for="task4" class="task">
+        <input type="checkbox" name="select" id="task4" value="Sorting">Sorting
+      </label>
+      <label for="task5" class="task">
+        <input type="checkbox" name="select" id="task5" value="Tree">Tree
+      </label>
+      <label for="task6" class="task">
+        <input type="checkbox" name="select" id="task6" value="Binary Search">Binary Search
+      </label>
+      <label for="task7" class="task">
+        <input type="checkbox" name="select" id="task7" value="Matrix">Matrix
+      </label>
+      <label for="task8" class="task">
+        <input type="checkbox" name="select" id="task8" value="Binary Tree">Binary Tree
+      </label>
+      <label for="task9" class="task">
+        <input type="checkbox" name="select" id="task9" value="Bit Manipulation">Bit Manipulation
+      </label>
+      <label for="task10" class="task">
+        <input type="checkbox" name="select" id="task10" value="Stack">Stack
+      </label>
+      <label for="task11" class="task">
+        <input type="checkbox" name="select" id="task11" value="Counting">Counting
+      </label>
+      <label for="task12" class="task">
+        <input type="checkbox" name="select" id="task12" value="Linked List">Linked List
+      </label>
+      <label for="task13" class="task">
+        <input type="checkbox" name="select" id="task13" value="Recursion">Recursion
+      </label>
+      <label for="task14" class="task">
+        <input type="checkbox" name="select" id="task14" value="Queue">Queue
+      </label>
+      <label for="task15" class="task">
+        <input type="checkbox" name="select" id="task15" value="Merge Sort">Merge Sort
+      </label>
+      <label for="task16" class="task">
+        <input type="checkbox" name="select" id="task16" value="Bubble Sort">Bubble Sort
+      </label>
+      <label for="task" class="task">
+        <input type="checkbox" name="select" id="task" value="Selection Sort">Selection Sort
+      </label>
+    </div>
+ </div>
+
+
+
+<!--write description -->
+  <label for="description"><h2 id="tdescription">Description</h2></label>
+  <textarea name="description"  id="description"></textarea>
+
+<!--add test cases -->
+
+<h2 id="ttestcase">Add Test Cases</h2>
+<div id="testcase">
+<ul>
+  <table style="width:100%">
+    <caption style="text-align:left">Test Case 1</caption>
+    <tr>
+      <td>Input</td>
+      <td>Ouput</td>
+    </tr>
+    <tr>
+      <td> <textarea name="testcaseinput"  id="testcaseinput" style="width:332px;height:80px"></textarea> </td>
+      <td> <textarea name="testcaseoutput"  id="testcaseoutput" style="width:332px;height:80px"></textarea> </td>
+    </tr>
+  </table>
+
+  <input type="button" value="Delete">
+
+  <br><br>
+
+  <table style="width:100%">
+    <caption style="text-align:left">Test Case 2</caption>
+    <tr>
+      <td>Input</td>
+      <td>Ouput</td>
+    </tr>
+    <tr>
+      <td> <textarea name="testcaseinput"  id="testcaseinput" style="width:332px;height:80px"></textarea> </td>
+      <td> <textarea name="testcaseoutput"  id="testcaseoutput" style="width:332px;height:80px"></textarea> </td>
+    </tr>
+  </table>
+
+  <input type="button" value="Delete">
+
+  <br><br>
+
+  <input type="button" id="addcasebutton" value="Add Test Case">
+
+
+</ul>
+</div>
+
+
+<!--run code -->
+
+  <label for="runcode"><h2 id="trun">Run My Code</h2></label>
+  <textarea name="runcode"  id="runcode"></textarea>
+  <input type="button" id="runbutton" style="font-size: 22px;" value="Run">
+
+  <br><br>
+
+
+<!--save and submit -->
+<div id="">
+  <input id="saveb" type="button" style="margin-top: 20px;" onclick="alert('Your draft has been saved!')" value="Save Draft">
+  <br>
+  <input id="submitb" type="button" style="margin-top: 30px;" onclick="alert('Your question has been successfully submitted!')" value="Submit My Problem">
+</div>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.myspringboot.modulers.problams.dao.ProblemDao">
+
+
+    <resultMap type="com.example.myspringboot.modulers.problams.entity.ProblemEntity" id="problemMap">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="solution" column="solution"/>
+        <result property="difficulty" column="difficulty"/>
+        <result property="submissions" column="submissions"/>
+        <result property="rating" column="rating"/>
+    </resultMap>
+
+
+</mapper>
