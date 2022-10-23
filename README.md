@@ -76,7 +76,7 @@ Example
 
 1：Login/Sign up
 
-![login](.\picture\Login.jpg)
+![login](./picture/Login.jpg)
 
 Enter the username and password to log in. 
 The administrator account defaults to admin/admin1, which provides the registration function.
