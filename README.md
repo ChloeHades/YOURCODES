@@ -34,7 +34,8 @@ npm install
 ```
 npm run dev
 ```
-or user can install Vue.Js on Intellij, then open the front-end folder, Users can follow the steps in the readme file in the front-end folder
+or user can install Vue.Js on Intellij, then open the front-end folder, Users can follow the steps in the readme file in the front-end folder.
+If you encounter problems installing npm, you can search for solutions on google.
 
 <font size = 3>Back-end:</font>
 
@@ -69,7 +70,7 @@ module.exports = {
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
-    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+    poll: false// https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 ```
 
 Example
