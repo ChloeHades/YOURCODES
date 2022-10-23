@@ -84,14 +84,14 @@ The administrator account defaults to admin/admin1, which provides the registrat
 
 2：List of problems
 
-![problemlist](.\picture\list of problems.jpg)
+![problemlist](./picture/list of problems.jpg)
 
 After logging in, users can see the questions in the question bank, view the average score of the questions across all users, and search for different attributes of the questions based on different conditions, such as the difficulty of the question, the type of question, etc.
 3：View the details of title.
 
 ​   Click on the blue solution in each row of the problem list to go to the details page for that problem
 
-![problemdetail](.\picture\problemdetails.jpg)
+![problemdetail](./picture/problemdetails.jpg)
 
 1：Show description of problems, and examples of input and output.
 
@@ -105,13 +105,13 @@ After logging in, users can see the questions in the question bank, view the ave
 
 4：Create problem
 
-![createproblem](.\picture\createproblem.jpg)
+![createproblem](./picture/createproblem.jpg)
 
 Users create problems and can debug them on this page.
 
 5：Ranking
 
-![ranking](.\picture\Ranking1.jpg)
+![ranking](./picture/Ranking1.jpg)
 
 
 ## Future Plan
